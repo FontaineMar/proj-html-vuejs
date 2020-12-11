@@ -16,26 +16,22 @@
   margin-right: auto;
   margin-left: auto;
 }
-.language{
-  flex-grow:1;
-}
 
+/* HEADER */
 .header-top{
   display: flex;
   align-items: center;
   justify-content:flex-end;
   height: 50px;
 }
-
-a {
-text-decoration: none;
+.language{
+  flex-grow:1;
 }
-
 .menu > li{
   display: inline-block;
   list-style-type: none;
-  padding:5px;
   color: #97a9ba;
+  padding:2px;
 }
 
 .header-down{
@@ -44,15 +40,12 @@ text-decoration: none;
   height: 80px;
   justify-content: space-between;
   border-top:1px solid  #97a9ba;
-
 }
-
 .search{
   display: flex;
   align-items: center;
   font-size: 0.7rem;
 }
-
 .searchInpBtn{
   background-color:#e4e8ed;
 }
@@ -67,17 +60,16 @@ text-decoration: none;
   color: #fff;
   width: 50px;
 }
-
 .menuAccount > li{
   display: inline-block;
   list-style-type: none;
   padding: 10px;
   color: #1a5eca;
 }
-
 .signUp > button {
   height: 35px;
   background-color: #1a5eca;
+  opacity:0.8;
   color: #fff;
   padding: 0 15px ;
   font-size: 0.8rem;
@@ -85,7 +77,10 @@ text-decoration: none;
   border: none;
   font-weight: 900;
 }
-
+.signUp > button:hover{
+  opacity:1;
+}
+/* MAIN PARTE 1 */
 .bkg-jumbotron{
   background-image:url('../img/base.png');
   height:400px;
@@ -99,7 +94,6 @@ text-decoration: none;
   justify-content: center;
   height:300px;
 }
-
 .jumbotron > h1{
   font-size:3rem;
 }
@@ -118,20 +112,21 @@ text-decoration: none;
   border: none;
   margin-top: 20px;
 }
+.btnJumbo > button:hover{
+  background-color: #4bd7a8;
+}
 
 .cards{
   display: flex;
   justify-content: space-between;
   margin-top:50px;
 }
-
 .card {
   width: calc(100%/3);
   background-color: #f0f4fa;
   padding:30px;
-
+  opacity:0.8;
 }
-
 .card > i {
   font-size:60px;
   font-weight: 100;
@@ -143,6 +138,9 @@ text-decoration: none;
 .card > p{
   margin-top:20px;
   color: #97a9ba;
+}
+.card:hover{
+  opacity:1.5;
 }
 .presentationCourses{
   display: flex;
@@ -165,6 +163,8 @@ text-decoration: none;
   display: flex;
   justify-content: space-between;
 }
+
+/* MAIN PARTE 2  */
 
 .bkg-readMore{
   background-image:url('../img/Untitled-1-1-1-1-1.png');
@@ -191,26 +191,48 @@ text-decoration: none;
   border: none;
   margin-top: 20px;
 }
+
 .courses {
   text-align: center;
   height:900px;
+}
+.courses > h1{
+  margin-top:50px;
+  font-size:2.5rem;
 }
 .courseMenu > ul {
   display: inline-block;
   list-style-type: none;
   color: #1a5eca;
   margin-top: 40px;
-
+  margin-bottom:20px;
+}
+.courseMenu > ul > li:hover{
+  background-color: #1a5eca;
+  opacity:0.5;
+  color: #fff;
+  border-radius:20px;
 }
 .courseMenu > ul > li{
-  padding: 20px;
+  padding: 15px;
 }
 .groupCourse{
-display: flex;
-flex-wrap: wrap;
-position:relative;
-
-
+  display: flex;
+  flex-wrap: wrap;
+  position:relative;
+}
+.groupCourse > button{
+  height: 35px;
+  background-color: #1a5eca;
+  color: #fff;
+  padding: 0 15px ;
+  font-weight: 900;
+  font-size: 1rem;
+  border-radius:20px;
+  border: none;
+  position: absolute;
+  bottom:-80px;
+  right:46%;
 }
 .course{
   width:calc(100% / 6 - 20px);
@@ -256,20 +278,8 @@ position:relative;
   font-size:0.6rem;
 }
 
-.groupCourse > button{
-  height: 35px;
-  background-color: #1a5eca;
-  color: #fff;
-  padding: 0 15px ;
-  font-weight: 900;
-  font-size: 1rem;
-  border-radius:20px;
-  border: none;
-  position: absolute;
-  bottom:-80px;
-  right:46%;
+/* MAIN PARTE 3 */
 
-}
 .bkg-result{
   background-image: url('../img/we_proud.png');
   background-color: #f0f4fa;
@@ -293,22 +303,18 @@ position:relative;
 .result-numbers{
   display: flex;
   justify-content: center;
-
 }
 .result-numbers > .number{
   border-left:0.5px solid #97a9ba;
   margin-top:50px;
   padding:40px;
 }
-
 .result-numbers > .number:first-child{
   border-left: none;
 }
-
 .number > p{
   font-size: 3.5rem;
   font-weight: bold;
-
 }
 .number > span{
   font-size: 1rem;
@@ -319,7 +325,6 @@ position:relative;
   background-color: #4db7a8;
   height: 200px;
 }
-
 .newsletter{
   display: flex;
   align-items: center;
@@ -350,14 +355,11 @@ position:relative;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
-
 .newsletter-input > input{
   height: 35px;
   border: none;
 }
-
 .newsletter-input > button{
   height: 35px;
   background-color: #1a5eca;
@@ -367,18 +369,16 @@ position:relative;
   font-size: 1rem;
   border: none;
 }
-
+/* MAIN PARTE 4 */
 .bkg-popular-course{
   background-color: #f0f4fa;
   height:550px;
   position: relative;
 }
-
 .popular-course-title > h2{
   text-align: center;
   padding-top:40px;
 }
-
 .popular-course-title > p{
   text-align: center;
   padding:20px;
@@ -404,11 +404,19 @@ position:relative;
   justify-content: center;
   align-items: center;
 }
+.chevL:hover{
+  background-color: #3c6669;
+  color: #fff;
+}
+.chevR:hover{
+  background-color: #3c6669;
+  color: #fff;
+}
+
 .became{
   display:flex;
   padding:80px;
 }
-
 .became-card{
   display:flex;
   align-items: center;
@@ -428,7 +436,6 @@ position:relative;
   font-size: 0.8rem;
   color: #97a9ba;
 }
-
 .became-title > button{
   height: 35px;
   background-color: #1a5eca;
@@ -439,6 +446,9 @@ position:relative;
   border-radius:20px;
   border: none;
 }
+.became-title > button:hover{
+  background-color:#4bd7a8;
+}
 
 .bkg-rating{
   background-image: url('../img/brooke-cagle-224821-unsplash-1-1920x700.jpg');
@@ -447,7 +457,6 @@ position:relative;
   display: flex;
   align-items: center;
 }
-
 .rating{
   height:400px;
   padding:80px;
@@ -455,12 +464,10 @@ position:relative;
   position:relative;
   width:60%;
 }
-
 .rating > h2{
   font-size:1.5rem;
   padding-bottom:20px;
 }
-
 .rating > p:first-of-type{
   font-size:0.9rem;
   padding-bottom: 20px;
@@ -469,7 +476,6 @@ position:relative;
 .rating > p:last-of-type{
   font-size:0.6rem;
 }
-
 .square{
   width:30px;
   height: 30px;
@@ -479,6 +485,8 @@ position:relative;
   background-color:#fff;
   transform: rotate(45deg);
 }
+
+/* FOOTER */
 .foot{
   height:300px;
   display:flex;
@@ -499,16 +507,13 @@ position:relative;
 .sectionFoot > p{
   font-size:0.8rem;
 }
-
 .sectionFoot > p:nth-last-child(2){
   margin-top:30px;
 }
-
 .sectionFoot > h6{
   color:#97a9ba;
   margin-top:15px;
 }
-
 .page > ul{
   padding:15px;
   font-size: 0.8rem;
@@ -525,12 +530,10 @@ position:relative;
   align-items: center;
   margin:20px;
 }
-
 .footImg > img{
   width:50px;
   height:50px;
 }
-
 .footImgDes{
   font-size:0.7rem;
   color: #97a9ba;
@@ -541,7 +544,8 @@ position:relative;
   color:#feec4f;
   font-size:0.8rem;
 }
- /* COLOR & PADDING & MARGIN */
+
+/* COLOR & PADDING & MARGIN */
 .color-grey{
   color: #97a9ba;
 }
@@ -551,7 +555,6 @@ position:relative;
 .color-blue{
   color: #1a5eca;
 }
-
 .padL{
   padding:20px;
 }
@@ -570,6 +573,6 @@ position:relative;
 .margin-top{
   margin-top:20px;
 }
-.margin-bottom{
-  margin-bottom: 15px;
+a {
+text-decoration: none;
 }

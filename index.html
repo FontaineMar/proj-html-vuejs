@@ -22,58 +22,59 @@
   <body>
     <div id="root">
       <header>
-      <div class="container-sizeL">
-        <div class="header-top">
-          <div class="language">
-            <a href="#" class="color-grey">English<i class="fas fa-angle-down"></i></a>
+        <div class="container-sizeL">
+          <div class="header-top">
+            <div class="language">
+              <a href="#" class="color-grey">English<i class="padS fas fa-angle-down"></i></a>
+            </div>
+            <ul class="menu padL" v-for='el in menu'>
+              <li><a href="#" class="color-grey">{{el}}</a></li>
+            </ul>
+            <ul class="menu color-grey">
+              <li><i class="fab fa-twitter"></i></li>
+              <li><i class="fab fa-instagram"></i></li>
+              <li><i class="fab fa-behance"></i></li>
+              <li><i class="fas fa-basketball-ball"></i></li>
+              <li><i class="fab fa-whatsapp"></i></li>
+              <li><i class="fab fa-git"></i></li>
+              <li><i class="fab fa-linkedin"></i></li>
+              <li><i class="fab fa-pinterest"></i></li>
+            </ul>
           </div>
-          <ul class="menu" v-for='el in menu'>
-            <li><a href="#" class="color-grey">{{el}}</a></li>
-          </ul>
-          <ul class="menu padL color-grey">
-            <li><i class="fab fa-twitter"></i></li>
-            <li><i class="fab fa-instagram"></i></li>
-            <li><i class="fab fa-behance"></i></li>
-            <li><i class="fas fa-basketball-ball"></i></li>
-            <li><i class="fab fa-whatsapp"></i></li>
-            <li><i class="fab fa-git"></i></li>
-            <li><i class="fab fa-linkedin"></i></li>
-            <li><i class="fab fa-pinterest"></i></li>
-          </ul>
-        </div>
-        <div class="header-down">
-          <div class="logo">
-            <img src="img/MasterStudy_logo.svg" alt="logo">
-          </div>
-          <div class="search">
-            <a href="#" class="padS color-grey"><i class="fas fa-bars"></i>CATEGORY</a>
-            <div class="searchInpBtn">
-              <input type="text" size="30px" class="padM" value="" placeholder="search courses">
-              <button type="button" name="button"  class="btnSearch"><i class="fas fa-search"></i></button>
+          <div class="header-down">
+            <div>
+              <img src="img/MasterStudy_logo.svg" alt="logo">
+            </div>
+            <div class="search">
+              <a href="#" class="padS color-grey"><i class="fas fa-bars"></i>CATEGORY</a>
+              <div class="searchInpBtn">
+                <input type="text" size="30px" value="" placeholder="search courses">
+                <button type="button" name="button"><i class="fas fa-search"></i></button>
+              </div>
+            </div>
+            <ul class="menuAccount">
+                <li><a href="#" class="color-black"><i class=" padS fas fa-bullhorn"></i>Become an instructor</a></li>
+                <li><a href="#" class="color-black"><i class=" padS fas fa-briefcase"></i>For enterprise</a></li>
+            </ul>
+            <div class="signUp">
+              <a href="#" class="padM color-blue"><i class="padS fas fa-user"></i>Log in</a>
+              <button type="button" name="button">Sign up</button>
+              <a href="#" class="color-blue"><i class="padS far fa-bookmark"></i></a>
             </div>
           </div>
-          <ul class="menuAccount">
-              <li><a href="#" class="color-black"><i class="color-blue padS fas fa-bullhorn"></i>Become an instructor</a></li>
-              <li><a href="#" class="color-black"><i class="color-blue padS fas fa-briefcase"></i>For enterprise</a></li>
-          </ul>
-          <div class="signUp">
-            <a href="#" class="padM color-blue"><i class="padS fas fa-user"></i>Log in</a>
-            <button type="button" name="button">Sign up</button>
-            <a href="#" class="color-blue"><i class="padS far fa-bookmark"></i></a>
-          </div>
         </div>
-      </div>
-    </header>
+      </header>
       <main>
+        <!-- MAIN PARTYE 1 -->
         <div class="bkg-jumbotron">
-        <div class="jumbotron container-sizeM">
-          <h1>Start Investing in You</h1>
-          <p>whit over 1200 courses in 18 subejcts, you're guaranteed to<br>find something that's right for you.</p>
-          <div class="btnJumbo">
-            <button type="button" name="button">JOIN FOR FREE</button>
+          <div class="jumbotron container-sizeM">
+            <h1>Start Investing in You</h1>
+            <p>whit over 1200 courses in 18 subejcts, you're guaranteed to<br>find something that's right for you.</p>
+            <div class="btnJumbo">
+              <button type="button" name="button">JOIN FOR FREE</button>
+            </div>
           </div>
         </div>
-      </div>
         <div class="container-sizeM">
           <div class="cards">
             <div class="card margin-right">
@@ -139,6 +140,7 @@
             </div>
           </div>
         </div>
+        <!-- MAIN PARTE 2 -->
         <div class="bkg-readMore">
           <div class="readMore container-sizeM">
             <h2>Limitless learnig<br>more possibilities</h2>
@@ -148,7 +150,7 @@
             </div>
           </div>
         </div>
-        <div class="courses container-sizeL margin">
+        <div class="courses container-sizeL">
           <h1>Recent courses</h1>
           <div class="courseMenu">
             <ul v-for='el in menuCourses'>
@@ -183,8 +185,8 @@
             </template>
             <button type="button" name="button">Show All</button>
           </div>
-
         </div>
+        <!-- MAIN PARTE 3 -->
         <div class="bkg-result">
           <div class="result container-sizeM">
             <h2>We are Proud</h2>
@@ -208,12 +210,6 @@
               </div>
             </div>
           </div>
-
-
-
-
-
-
         </div>
         <div class="bkg-newsletter">
           <div class="container-sizeM newsletter">
@@ -231,6 +227,7 @@
           </div>
 
         </div>
+        <!-- MAIN PARTE 4 -->
         <div class="bkg-popular-course">
           <div class="popular-course-title container-sizeL">
             <h2>Popular courses</h2>
